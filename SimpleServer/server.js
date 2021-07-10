@@ -31,7 +31,7 @@ http.createServer(function(req, res){
     }
 
     if(stats.isFile()){ // checks if url is a file to be served
-        var mimeType - mimeTypes[path.extname(fileName).split(".").reverse()[0]];
+        var mimeType = mimeTypes[path.extname(fileName).split(".").reverse()[0]];
         res.writeHead(200, {'Content-type' : mimeType});
 
         var fileStream = fs.createReadStream(fileName);
@@ -47,4 +47,4 @@ http.createServer(function(req, res){
         res.end();
     }
 
-}).listen(3000);
+}).listen(1337);
