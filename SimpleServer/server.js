@@ -17,12 +17,12 @@ const mimeTypes = {
 
 http.createServer(function(req, res){
     var uri = url.parse(req.url).pathname;
-    var filename = path.join(process.cwd(), unescape(uri));
+    var fileName = path.join(process.cwd(), unescape(uri));
     console.log('Loading ' + uri);
     var stats;
 
     try{
-        stats = fs.lstatSync(filename);
+        stats = fs.lstatSync(fileName);
     } catch(e){
         res.writeHead(404, {'Content-type' : 'text/plain'});
         res.write('404 Not Found\n');
