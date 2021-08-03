@@ -1,7 +1,7 @@
 {
   "name": "basicexpresswebsite",
   "version": "1.0.0",
-  "description": "simple express website",
+  "description": "a very simple express website",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/tjohnson7021/NodeJSProjects.git"
   },
-  "author": "TJ",
+  "author": "Tiffini Johnson",
   "license": "ISC",
   "dependencies": {
     "body-parser": "*",
